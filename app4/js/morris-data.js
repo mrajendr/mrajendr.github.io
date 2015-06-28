@@ -4,58 +4,58 @@ $(function() {
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
-            iphone: 2666,
+            iphone: 86,
             ipad: null,
-            itouch: 2647
+            itouch: 2
         }, {
             period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            iphone: 78,
+            ipad: 22,
+            itouch: 9
         }, {
             period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            iphone: 75,
+            ipad: 19,
+            itouch: 8
         }, {
             period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            iphone: 89,
+            ipad: 35,
+            itouch: 5
         }, {
             period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            iphone: 88,
+            ipad: 19,
+            itouch: 2
         }, {
             period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            iphone: 77,
+            ipad: 42,
+            itouch: 8
         }, {
             period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            iphone: 65,
+            ipad: 37,
+            itouch: 15
         }, {
             period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            iphone: 90,
+            ipad: 5,
+            itouch: 1
         }, {
             period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
+            iphone: 98,
+            ipad: 4,
+            itouch: 2
         }, {
             period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            iphone: 74,
+            ipad: 13,
+            itouch: 7
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['itouch', 'ipad', 'iphone'],
+        labels: ['H2S', 'Alcohol', 'Oxygen'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -64,14 +64,14 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
-            value: 12
+            label: "H2S Levels (ppm)",
+            value: 0.4
         }, {
-            label: "In-Store Sales",
-            value: 30
+            label: "Oxygen Levels (ppm)",
+            value: 80
         }, {
-            label: "Mail-Order Sales",
-            value: 20
+            label: "Alcohol Levels (ppm)",
+            value: 19
         }],
         resize: true
     });
@@ -81,35 +81,35 @@ $(function() {
         data: [{
             y: '2006',
             a: 100,
-            b: 90
+            b: 9
         }, {
             y: '2007',
             a: 75,
-            b: 65
+            b: 16
         }, {
             y: '2008',
             a: 50,
-            b: 40
+            b: 20
         }, {
             y: '2009',
             a: 75,
-            b: 65
+            b: 20
         }, {
             y: '2010',
             a: 50,
-            b: 40
+            b: 4
         }, {
             y: '2011',
             a: 75,
-            b: 65
+            b: 19
         }, {
             y: '2012',
             a: 100,
-            b: 90
+            b: 5
         }],
         xkey: 'y',
         ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
+        labels: ['Oxygen (ppm)', 'H2S (ppm)'],
         hideHover: 'auto',
         resize: true
     });
